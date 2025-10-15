@@ -49,7 +49,31 @@ Include the following headers in your requests:
 | user1   | password123   | user  |
 | admin1  | password123   | admin |
 
-## Repository
+## Screenshots
 
-https://github.com/tyulyukov/swe-lab-04
+### 1. GET /documents without authentication → 401 Unauthorized
+![401 Unauthorized](docs/1.png)
 
+### 2. GET /employees as user → 403 Forbidden
+![403 Forbidden](docs/2.png)
+
+### 3. GET /documents as user → 200 OK
+![200 OK Documents](docs/3.png)
+
+### 4. GET /employees as admin → 200 OK
+![200 OK Employees](docs/4.png)
+
+### 5. POST /documents with valid body → 201 Created
+![201 Created](docs/5.png)
+
+### 6. POST /documents with missing fields → 400 Bad Request
+![400 Bad Request](docs/6.png)
+
+### 7. DELETE /documents/1 → 204 No Content
+![204 No Content](docs/7.png)
+
+### 8. GET /non-existent route → 404 Not Found
+![404 Not Found](docs/8.png)
+
+### 9. Test client output
+![Test Client](docs/9.png)
