@@ -74,6 +74,3 @@ Include the following headers in your requests:
 
 ### 8. GET /non-existent route → 404 Not Found
 ![404 Not Found](docs/8.png)
-
-### 9. Test client output
-![Test Client](docs/9.png)
